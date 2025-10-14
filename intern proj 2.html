@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CatCare</title>  
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <style>
+          body{
+            margin: 0;
+            font-family: cursive;
+          }
+          .carousel-item {
+            color: white;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+          }
+          .offer-bar {
+            background-color: #f4c542;
+            color: #333;
+          }
+          .diwali-offer {
+            background-color: #ff6f61;
+          }
+          .carousel-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+          img:hover {
+            transform: scale(1.05);   /* zoom in slightly */
+            transition: transform 0.3s ease;
+          }
+          img{
+            height: 200px;
+          }
+           nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: #eee;
+          padding: 10px 20px;
+          }
+          .logo { font-weight: bold; font-size: 30px; }
+          .nav-links { display: flex; gap: 20px; position: relative; }
+          .nav-links a {
+            text-decoration: none;
+            color: #213fa2;
+            padding: 8px;
+          }
+          .dropdown:hover .menu { display: block; }
+          .menu {
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background: #bd75757a;
+            box-shadow: 0 2px 5px #ccc;
+          }
+          .menu a {
+            display: block;
+            padding: 10px 20px;
+            white-space: nowrap;
+          }
+        </style>
+    </head>    
+        <body> 
+            <section>
+                <nav>
+                  <div class="logo">🐾 CatCare</div>
+                  <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#contact">Contact</a>
+                    <div class="dropdown">
+                    <a href="#">Categories</a>
+                       <div class="menu">
+                        <a href="#grooming">Grooming</a>
+                        <a href="#clothing">Clothing</a>
+                        <a href="#accessories">Accessories</a>
+                        <a href="#food">Foods</a>
+                        <a href="#toys">Toys</a>
+                      </div>
+                    </div>                  
+                  </div>
+                </nav>
+            </section> 
+            <section class="text-center bg-light py-5">
+            <div class="container">
+                <img src="logo.jpg" class="img-fluid no-border" alt="Happy pets">
+                <h1 class="mt-4 fw-bold">🐱Caring for Your Furry Friend🐱</h1>
+                <p class="lead">Your one-stop shop for pet food, toys, accessories, and more!</p>
+                <a href="#shop" class="btn btn-primary btn-lg mt-3">Shop Now</a>
+            </div>
+            </section>
+            <section>
+              <div  class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" >
+                <div class="carousel-inner">
+                  <!-- 🐾 Offer Bar Slide -->
+                  <div class="carousel-item  active offer-bar">
+                    <div class="carousel-text">🐾 20% OFF on Pet Toys this Week! 🐾</div>
+                    <div>Your one-stop shop for pet food, toys, accessories, and more!</div>
+                  </div>
+                  <!-- 🪔 Diwali Offer Slide -->
+                  <div class="carousel-item diwali-offer">
+                    <div class="carousel-text">🪔 Diwali Dhamaka for Your Pets! 🪔</div>
+                    <div>Get 30% OFF on festive pet accessories. Light up their joy!</div>
+                  </div>
+                </div>
+              </div>                         
+            </section>
+            <section>
+              <div class="container-fluid">
+                  <h2 class="text-center fw-bold mb-5 mt-3">Product Categories</h2>
+                  <div class="row text-danger fw-bold">
+                  <div class="col text-center"><img src="cat fod3.jpg" class="rounded-circle w-70" style="height: 100px;" ><p>Food</p></div>
+                  <div class="col text-center"><img src="toys-logo.jpg" class="rounded-circle w-70" style="height: 100px;"><p>Toys</p></div>
+                  <div class="col text-center"><img src="accessories-logo.jpeg.jpg" class="rounded-circle w-70" style="height: 100px;"><p>Accessories</p></div>
+                  <div class="col text-center"><img src="grooming-logo.jpeg.jpg" class="rounded-circle w-70" style="height: 100px;"><p>Grooming</p></div>
+                  <div class="col text-center"><img src="cloth images.jpg" class="rounded-circle" style="height: 100px;"><p>Clothes</p></div>
+                  </div>               
+              </div>
+            </section>
+            <section id="food">
+            <div class="container-fluid m-1">
+                <h2 class="text-center fw-bold mt-5">Foods</h2>
+                <div class="row text-center">
+                <div class="col border border-5 border-warning m-2 bg-info rounded"><img src="cat fod logo2.jpg" class="rounded w-100  border" style="height: 200px;" >
+                    <p>Whiskas Dry Cat Food for Adult Cats (1+ Years), Ocean Fish Flavour</p>
+                    <p> <strong>MRP ₹450</strong></p></div>
+                <div class="col border border-5 border-warning m-2 bg-info rounded"><img src="cat foo medley.jpg" class="rounded w-100 border" style="height: 200px;" >
+                    <p>Temptations Cat Treats - Seafood Medley Flavor - 85g</p>
+                    <p> <strong>MRP ₹150</strong></p></div>
+                <div class="col border border-5 border-warning m-2 bg-info rounded"><img src="cat schesir.jpg" class="rounded w-200 border" style="height: 200px;" >
+                    <p>Schesir Function Digestive Topper Pumpkin With Wheat Grass Sensitive Wet Food For Adult Cat - 40 gm</p>
+                    <p><strong>MRP ₹189</strong></p></div>
+                <div class="col border border-5 border-warning m-2 bg-info rounded"><img src="cat neutri.webp" class="rounded w-300 border" style="height: 200px;" >
+                    <p>NutriMeow Oceanfish In Gravy Wet Food For Adult Cat - 80 gm</p>
+                    <p><strong>MRP ₹65</strong></p></div>    
+                </div>               
+            </div>
+            </section>
+            <section id="toys">
+            <div class="container">
+                <h2 class="text-center fw-bold mt-5">Toys</h2>
+                <div class="row text-center">
+                <div class="col rounded border border-2"><img src="toys1.webp" class="mt-2 w-80" style="height: 200px;"><p>Cascado</p><strong>MRP ₹144</strong></div>
+                <div class="col rounded border border-2"><img src="toys2.jpeg.jpg" class="mt-2 w-80" style="height: 200px;"><p>Car</p><strong>MRP ₹559</strong></div>
+                <div class="col rounded  border border-2"><img src="cat toy1.jpg" class="mt-2 w-80" style="height: 200px;"><p>Scratcher Ball</p><strong>MRP ₹299</strong></div>
+                </div>               
+            </div>
+            </section>
+            <section id="accessories">
+            <div class="container-fluid">
+                <h2 class="text-center fw-bold mt-5">Accessories</h2>
+                <div class="row text-center bg-secondary">
+                <div class="col p-2"><img src="steam cat brush.jpg" class="rounded w-80" style="height: 200px;"><p> Steam Cat Brush</p><strong> MRP ₹245</strong></div>
+                <div class="col p-2"><img src="cat acc 2.jpg" class="rounded w-80" style="height: 200px;"><p>Bell Collar</p><strong>MRP ₹199</strong></div>
+                <div class="col p-2"><img src="cat mitts.jpg" class="rounded w-80" style="height: 200px;"><p>Pair of Mitts</p><strong>MRP ₹99</strong></div>
+                <div class="col p-2"><img src="cat hut.jpg" class="rounded w-80" style="height: 200px;"><p>Cat Hut </p><strong>MRP ₹649</strong></div>    
+                </div>               
+            </div>
+            </section>
+             <section id="grooming">
+            <div class="container-fluid">
+                <h2 class="text-center fw-bold mt-5">Grooming</h2>
+                <div class="row text-center">
+                <div class="col"><img src="bubble bath.jpg" class="rounded-circle w-80 border border-5 border-warning" ><p>Bubble bath</p><strong> MRP ₹40</strong></div>
+                <div class="col"><img src="cat nail clipp.jpg" class="rounded-circle w-80 border border-5 border-warning"><p>Nail Clippers</p><strong> MRP ₹39</strong></div>
+                <div class="col p-2"><img src="cat groom 1.jpg" class="rounded-circle w-80 border border-5 border-warning"><p>Electric Fur Trimmer</p><strong> MRP ₹450</strong></div>
+                </div>               
+            </div>
+            </section>
+             <section id="clothing">
+            <div class="container-fluid">
+                <h2 class="text-center fw-bold mt-5">Clothing</h2>
+                <div class="row text-center">
+                <div class="col"><img src="ca cloth 1.jpg" class="rounded" ><p>Sweater</p><strong> MRP ₹877</strong></div>
+                <div class="col"><img src="cat coth4.jpg" class="rounded"><p>Hoodies</p><strong> MRP ₹499</strong></div>
+                <div class="col"><img src="kurta.jpg" class="rounded"><p>Kurta</p><strong> MRP ₹159</strong></div>
+                <div class="col"><img src="winter-thick-clot.webp" class="rounded"><p>Winter Thick Cloth</p><strong> MRP ₹877</strong></div>    
+                </div>               
+            </div>
+            </section>          
+            <section class="mt-5 p-3 text-center bg-warning"  id="features">
+            <div class="container-fluid">
+                <h2 class="fw-bold mb-4">Why Shop With Us?</h2>
+                <div class="row">
+                <div class="col">🚚 Free Delivery over ₹500</div>
+                <div class="col">🐾 24/7 Vet Support</div>
+                <div class="col">🔄 Easy Returns</div>
+                <div class="col">🎁 Loyalty Points</div>
+                </div>
+            </div>
+            </section>   
+            <section id="contact">
+              <div class="container-fluid text-center text-danger bg-info mt-5">
+                  <p><strong>@2025 created with ❤</strong></p>
+                  <p><strong>✉yourcat@catcare.com</strong></p>
+                  <p><strong>☎11447823</strong></p>
+                </div>                
+              </div>
+            </section>         
+        </body>
+    </html>
